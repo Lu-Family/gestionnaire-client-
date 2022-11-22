@@ -1,0 +1,10 @@
+<h2>Chercher un partenaire</h2>
+<form action="/partners" method="GET">
+<label>Recherche par nom</label> 
+<input type="text" name="name" value="<%= searchOptions.name %>">
+<button type="submit">Recherche</button>
+</form>
+<br>
+<% partners.forEach(partner => { %> 
+<div><%= partner.name  %> </div>
+<%}) %> 
