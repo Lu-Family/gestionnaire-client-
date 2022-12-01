@@ -5,6 +5,8 @@ const connectEnsureLogin = require('connect-ensure-login');
 
 // All partners Route
 router.get("/" , connectEnsureLogin.ensureLoggedIn(), async (req, res) => {
+
+  
   let searchOptions = {};
   if (req.query.name != null && req.query !== "") {
     searchOptions.name = new RegExp(req.query.name, "i");

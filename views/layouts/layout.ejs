@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="styles/style.css" />
 
 
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
   </head>
 
   <body class="bg-white dark:bg-gray-900">
@@ -32,6 +36,30 @@
             document.documentElement.classList.remove('dark')
         }
     </script>
+
+<script>
+  /*
+$(function(){
+$.('#default-search').autocomplete({
+  source: function(req, res){
+
+    $.ajax({
+      url:"partners/", 
+      dataType: 'jsonp', 
+      type: 'GET', 
+      data: req, 
+      success: function(data) {
+
+      }, 
+      error : function(err){
+        console.log(err.status)
+      }
+    })
+  }
+});
+});
+*/
+</script>
 </div>
   </body>
 </html>
